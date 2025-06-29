@@ -14,8 +14,8 @@ body {
 }
 
 .clock {
-    height: 300px;
-    width: 600px;
+    height: 200px;
+    width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,6 +45,10 @@ h1 {
 }
 
 .date1 {
-    padding-right: 200px;
+    padding-right: 150px;
 }
 
+body:hover{
+       background-color:black;
+    color: white;
+}
