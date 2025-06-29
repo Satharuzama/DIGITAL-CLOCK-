@@ -1,4 +1,3 @@
-
 var h = document.querySelector("h1");
 var mdate = document.querySelector(".date");
 var Day = document.querySelector(".day");
@@ -99,6 +98,53 @@ mdate.innerHTML =  date + ":"  + " " + month + " " + ":" + year ;
 
 Day.innerHTML =  Days;
 
-console.log(ampm);
 
 },1000)
+
+
+var flag = 0 ;
+
+var dm = document.querySelector(".time");
+var dm1 = document.querySelector("html,body");
+var dm2 = document.querySelector(".clock");
+var dm4 = document.querySelector("#dm")
+var dm5 = document.querySelector(".cen");
+
+var btn1 = document.querySelector("#dm");
+
+
+btn1.addEventListener("click",function(){
+if (flag == 0){
+ dm.style.backgroundColor = "white";
+  dm.style.color = "black";
+   dm1.style.backgroundColor = "white";
+  dm1.style.color = "black";
+     dm2.style.backgroundColor = "white";
+  dm2.style.color = "black";
+     dm4.style.backgroundColor = "white";
+  dm4.style.color = "black";
+     dm5.style.backgroundColor = "white";
+  dm5.style.color = "black";
+  dm4.innerHTML = "DARK MODE ON"; 
+  flag = 1; 
+}  else {
+   dm.style.backgroundColor = "black";
+  dm.style.color = "white";
+   dm1.style.backgroundColor = "black";
+  dm1.style.color = "white";
+     dm2.style.backgroundColor = "black";
+  dm2.style.color = "white";
+     dm4.style.backgroundColor = "black";
+  dm4.style.color = "white";
+     dm5.style.backgroundColor = "black";
+  dm5.style.color = "white";
+  flag = 0;
+    dm4.innerHTML = "DARK MODE OFF"; 
+}
+
+
+})
+
+
+
+

@@ -1,16 +1,24 @@
-html,
-body {
+html {
     height: 100%;
     width: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #000;   
 }
 
-body {
+*{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.cen {
     display: flex;
     align-items: center;
     justify-content: center;
      background-color:black;
     color: white;
+    margin-top: 140px;
 }
 
 .clock {
@@ -21,7 +29,7 @@ body {
     justify-content: center;
     border-radius: 30px;
     border: 3px solid gray;
-    margin: 15px 10px;
+    margin: 10px 10px;
 }
 
 
@@ -41,14 +49,26 @@ h1 {
     background-color: black;
     color: white;
     border-radius: 15px;
-    border: 3px solid white;
+    border: 3px solid gray;
 }
 
 .date1 {
-    padding-right: 150px;
+    padding-right: 135px;
 }
 
-body:hover{
-       background-color:black;
+
+button{
+    background-color: black;
     color: white;
+    padding: 10px 15px;
+  border: 2px solid white;
+}
+
+#dm{
+    margin-left: 90%;
+    cursor: pointer;
+     background-color: black;
+    color: white;
+    padding: 10px 15px;
+  border: 2px solid white;
 }
