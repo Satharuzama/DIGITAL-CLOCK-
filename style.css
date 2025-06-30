@@ -69,18 +69,21 @@ h1 {
 @media (max-width: 480px) {
     .clock{
         height: 150px;
-        width: 250px;
+        width: 300px;
          font-size: 8px;
+         
     }
    #dm{
-    font-size: 10px;
+    font-size: 8px;
     margin-right: auto;
+    padding-right: 20px;
+    font-weight: 600;
    }
 
     .time{
         height: 200px;
-        width: 300px;
-        font-size: 7px;
-
+        width: 350px;
+        font-size: 8px;
+            font-weight: 600;
     }
 }
