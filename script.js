@@ -94,7 +94,7 @@ const dayName = [ "SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY"
 // }
 // }
 
-var Days = getdayName(dd);
+// var Days = getdayName(dd);
 
 h.innerHTML =   hh + ":" + mm + ":" + ss + " " + ampm;
 

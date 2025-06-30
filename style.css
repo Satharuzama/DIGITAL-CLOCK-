@@ -9,7 +9,6 @@ html {
     margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 .cen {
@@ -58,11 +57,30 @@ h1 {
 
 
 #dm{
-    margin-left: 90%;
+    margin-left: 87%;
     cursor: pointer;
     color: white;
       background-color: black;
     color: white;
     padding: 10px 15px;
   border: 2px solid gray;
+}
+
+@media (max-width: 480px) {
+    .clock{
+        height: 150px;
+        width: 250px;
+         font-size: 8px;
+    }
+   #dm{
+    font-size: 10px;
+    margin-right: auto;
+   }
+
+    .time{
+        height: 200px;
+        width: 300px;
+        font-size: 7px;
+
+    }
 }
