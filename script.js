@@ -24,79 +24,83 @@ mm = mm < 10 ? "0" + mm : mm ;
 date = date < 10 ? "0" + date : date ;
 
 var mon = time.getMonth();
+const months = [ "JANUARY" , "FEBRUARY"  , "MARCH", "APRIL" ,"MAY", "JULY", "AUGUST" , "SEPTEMBER" ,"OCTOBER", "NOVEMBER"
+,"DECEMBER"]
 
-function getMonthName(mon){
-    switch(mon){
-    case 0 :  
-    return "JANUARY" ;
-    break;
-    case 1 : 
-    return "FEBRUARY" ;
-    break;
-    case 2 : 
-    return "MARCH";
-    break;
-     case 3 : 
-    return "APRIL";
-    break;
-     case 4 : 
-   return "MAY";
-    break;
-     case 5 : 
-   return "JUNE";
-    break;
-     case 6 : 
-   return "JULY";
-    break;
-     case 7 : 
-    return "AUGUST";
-   break;
-    case 8 : 
-    return "SEPTEMBER";
-    break;
-     case 9 : 
-    return "OCTOBER";
-    break;
-     case 10 : 
-    return "NOVEMBER";
-    break;
-     case 11 : 
-    return "DECEMBER";
-    break;
-}
-}
+// function getMonthName(mon){
+//     switch(mon){
+//     case 0 :  
+//     return "JANUARY" ;
+//     break;
+//     case 1 : 
+//     return "FEBRUARY" ;
+//     break;
+//     case 2 : 
+//     return "MARCH";
+//     break;
+//      case 3 : 
+//     return "APRIL";
+//     break;
+//      case 4 : 
+//    return "MAY";
+//     break;
+//      case 5 : 
+//    return "JUNE";
+//     break;
+//      case 6 : 
+//    return "JULY";
+//     break;
+//      case 7 : 
+//     return "AUGUST";
+//    break;
+//     case 8 : 
+//     return "SEPTEMBER";
+//     break;
+//      case 9 : 
+//     return "OCTOBER";
+//     break;
+//      case 10 : 
+//     return "NOVEMBER";
+//     break;
+//      case 11 : 
+//     return "DECEMBER";
+//     break;
+// }
+// }
 
-var month = getMonthName(mon);
 
 var year = time.getFullYear();
 var dd = time.getDay();
 
-function getdayName(dd){
-switch(dd){
-   case 0 : return "SUNDAY";
-  break;
-  case 1 : return "MONDAY";
-  break;
-   case 2 : return "TUESDAY";
-  break;
-   case 3 : return "WEDNESDAY";
-  break;
-   case 4 : return "THURSDAY";
-  break;
-   case 5 : return "FRIDAY";
-  break;
-   case 6 : return "SATURDAY";
-  break;
-}
-}
+const dayName = [ "SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY"
+,"SATURDAY"]
+
+// function getdayName(dd){
+// switch(dd){
+//    case 0 : return "SUNDAY";
+//   break;
+//   case 1 : return "MONDAY";
+//   break;
+//    case 2 : return "TUESDAY";
+//   break;
+//    case 3 : return "WEDNESDAY";
+//   break;
+//    case 4 : return "THURSDAY";
+//   break;
+//    case 5 : return "FRIDAY";
+//   break;
+//    case 6 : return "SATURDAY";
+//   break;
+// }
+// }
 
 var Days = getdayName(dd);
 
 h.innerHTML =   hh + ":" + mm + ":" + ss + " " + ampm;
 
-mdate.innerHTML =  date + ":"  + " " + month + " " + ":" + year ; 
+mdate.innerHTML =  date + ":"  + " " + months[mon] + " " + ":" + year ; 
 
-Day.innerHTML =  Days;
+Day.innerHTML =  dayName[dd];
 
 
 },1000)
