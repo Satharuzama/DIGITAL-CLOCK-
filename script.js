@@ -1,6 +1,8 @@
 var h = document.querySelector("h1");
 var mdate = document.querySelector(".date");
 var Day = document.querySelector(".day");
+var moon = document.querySelector("#moon");
+var sun = document.querySelector("#sun");
 
 setInterval(function(time){
  var time = new Date();
@@ -129,21 +131,24 @@ if (flag == 0){
   dm4.style.color = "black";
      dm5.style.backgroundColor = "white";
   dm5.style.color = "black";
-  dm4.innerHTML = "DARK MODE ON"; 
+     moon.style.opacity = 1;
+        sun.style.opacity = 0; 
   flag = 1; 
 }  else {
    dm.style.backgroundColor = "black";
-  dm.style.color = "white";
+   dm.style.color = "white";
    dm1.style.backgroundColor = "black";
-  dm1.style.color = "white";
-     dm2.style.backgroundColor = "black";
-  dm2.style.color = "white";
-     dm4.style.backgroundColor = "black";
-  dm4.style.color = "white";
-     dm5.style.backgroundColor = "black";
-  dm5.style.color = "white";
-  flag = 0;
-    dm4.innerHTML = "DARK MODE OFF"; 
+   dm1.style.color = "white";
+   dm2.style.backgroundColor = "black";
+   dm2.style.color = "white";
+   dm4.style.backgroundColor = "black";
+   dm4.style.color = "white";
+   dm5.style.backgroundColor = "black";
+   dm5.style.color = "white";
+    moon.style.opacity = 0;
+        sun.style.opacity = 1; 
+ 
+      flag = 0;
 }
 
 
